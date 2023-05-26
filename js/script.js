@@ -54,7 +54,7 @@ let nombrePokemon = document.createElement('h3');
 nombrePokemon.innerText = pokemon.nombre;
 
 let imagenPokemon = document.createElement('img');
-imagenPokemon.setAttribute("src",pokemon.img) // pokemon.img;
+imagenPokemon.src=pokemon.img 
 
 let tipoPokemon = document.createElement('p');
 tipoPokemon.innerText = pokemon.tipo;
