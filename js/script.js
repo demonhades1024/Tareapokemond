@@ -85,4 +85,10 @@ let fragmento= document.createDocumentFragment();
     listaPokemons.appendChild(fragmento);
 });
 
-
+function sonido(){
+  let fuenteSonido= new Audio("http://www.sonidosmp3gratis.com/sounds/pokemon-opening.mp3");
+  fuenteSonido.play();
+  fuenteSonido.loop=true
+  fuenteSonido.volume=0.4;
+  }
+  sonido();
