@@ -85,12 +85,21 @@ let fragmento= document.createDocumentFragment();
     listaPokemons.appendChild(fragmento);
 });
 
-  window.onload=()=>{
-    let fuenteSonido= new Audio("pokemon-opening.mp3");
-    fuenteSonido.play();
-    fuenteSonido.loop=true;
-    fuenteSonido.volume=0.4;
-  }
+//Musica de fondo
+let fuenteSonido= new Audio("pokemon-opening.mp3");
+  window.addEventListener("mouseover",()=>{
+   
+     while(fuenteSonido.play()==fuenteSonido.ended)
+     {
+      fuenteSonido.play();
+      break;
+     }
+    
+   });
+  
+    
+ 
+  
  
 
   
