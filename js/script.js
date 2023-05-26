@@ -83,6 +83,6 @@ let pokemonListItem=crearHTMLPokemon(pokemon);//li
 let fragmento= document.createDocumentFragment();
     fragmento.appendChild(pokemonListItem)
     listaPokemons.appendChild(fragmento);
-
 });
+
 
